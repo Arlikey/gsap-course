@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { sliderLists } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -19,8 +19,8 @@ const Menu = () => {
           scrub: true,
         },
       })
-      .fromTo("#m-left-leaf", { x: -100, y: 0 }, { x: 0, y: 0 },0)
-      .fromTo("#m-right-leaf", { x: 50, y: 0 }, { x: 0, y: 100 }, 0)
+      .fromTo("#m-left-leaf", { x: -100, y: 0 }, { x: 0, y: 0 }, 0)
+      .fromTo("#m-right-leaf", { x: 50, y: 0 }, { x: 0, y: 100 }, 0);
 
     gsap.fromTo("#title", { opacity: 0 }, { opacity: 1, duration: 1 });
     gsap.fromTo(
@@ -64,10 +64,7 @@ const Menu = () => {
   const nextCocktail = getCocktailAt(1);
 
   return (
-    <section
-      id="menu"
-      aria-labelledby="menu-heading"
-    >
+    <section id="menu" aria-labelledby="menu-heading">
       <img
         src="/images/slider-left-leaf.png"
         alt="left-leaf"

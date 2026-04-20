@@ -1,4 +1,3 @@
-import React from "react";
 import { openingHours, socials } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -37,12 +36,15 @@ const Contact = () => {
         duration: 1,
         ease: "power1.inOut",
       })
-      .from("#f-drinks-img", {
-        xPercent: 100,
-        opacity: 0,
-        duration: 1,
-
-      }, 0.5);
+      .from(
+        "#f-drinks-img",
+        {
+          xPercent: 100,
+          opacity: 0,
+          duration: 1,
+        },
+        0.5,
+      );
   }, []);
 
   return (

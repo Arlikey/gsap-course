@@ -1,4 +1,3 @@
-import React from "react";
 import { featureLists, goodLists } from "../../constants";
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "react-responsive";
