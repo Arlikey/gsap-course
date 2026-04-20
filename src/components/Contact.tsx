@@ -70,7 +70,7 @@ const Contact = () => {
           </address>
         </div>
 
-        <div>
+        <div className="contact-us">
           <h3>Contact Us</h3>
           <p>
             <a href="tel:5559876543">(555) 987-6543</a>
